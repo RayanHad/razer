@@ -1,0 +1,54 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "start": "tsc && webpack --config webpack.config.js --mode development && nodemon --watch src --exec electron ./dist/main/main.js",
+    "build": "tsc && webpack --mode production && electron-builder build --win --publish never",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.7",
+    "@babel/preset-react": "^7.25.7",
+    "@babel/preset-typescript": "^7.25.7",
+    "@types/ffi-napi": "^4.0.10",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "electron": "^20.3.8",
+    "electron-builder": "^25.0.5",
+    "electron-rebuild": "^3.2.9",
+    "mini-css-extract-plugin": "^2.9.1",
+    "nodemon": "^3.1.7",
+    "style-loader": "^4.0.0",
+    "typescript": "^5.6.2",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "@shadcn/ui": "^0.0.4",
+    "ffi-napi": "^4.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "build": {
+    "appId": "com.test_razer.app",
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "asar": false
+  }
+}

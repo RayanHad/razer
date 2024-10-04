@@ -1,0 +1,10 @@
+.display-value {
+    font-size: 24px;
+    color: #44d62c;
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #44d62c;
+}

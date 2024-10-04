@@ -1,0 +1,23 @@
+.increment-by-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.increment-by-one button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #44d62c;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.increment-by-one button:hover {
+    background-color: #3da724;
+}
