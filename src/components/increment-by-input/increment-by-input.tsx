@@ -5,9 +5,13 @@ interface IncrementByInputProps {
     handleIncrement: (amount: number) => void;
 }
 
+
+// allows user to input a custom increment amount
 const IncrementByInput: React.FC<IncrementByInputProps> = ({ handleIncrement }) => {
+    // state to manage the input value
     const [inputValue, setInputValue] = useState(1);
 
+    // input change handler
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setInputValue(parseInt(e.target.value) || 1);
     };

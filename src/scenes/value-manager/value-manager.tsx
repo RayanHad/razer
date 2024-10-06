@@ -23,9 +23,11 @@ const ValueManager: FunctionComponent = () => {
     return (
         <div className='container'>
             <div className="glow"></div>
-            <DisplayValue value={value} />
-            <IncrementByOne handleIncrement={handleIncrement} />
-            <IncrementByInput handleIncrement={handleIncrement} />
+            <div className="inner-container">
+                <DisplayValue value={value} />
+                <IncrementByOne handleIncrement={handleIncrement} />
+                <IncrementByInput handleIncrement={handleIncrement} />
+            </div>
         </div>
     );
 };

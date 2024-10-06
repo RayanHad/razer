@@ -1,10 +1,8 @@
 .display-value {
-    font-size: 24px;
-    color: #44d62c;
-    background-color: #111;
-    padding: 20px;
+    font-size: 2em;
     text-align: center;
-    border-radius: 10px;
     margin-bottom: 20px;
-    border: 2px solid #44d62c;
+    font-weight: 700;
+    color: #00ff00;
+    font-family: 'Titillium Web', sans-serif;
 }

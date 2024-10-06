@@ -6,6 +6,8 @@ interface IncrementByOneProps {
   handleIncrement: (amount?: number) => void;
 }
 
+
+// button to increment the value only by one
 const IncrementByOne: FunctionComponent<IncrementByOneProps> = ({ handleIncrement }) => {
   return (
     <div className='increment-by-one'>

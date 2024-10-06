@@ -1,35 +1,37 @@
 .increment-by-input {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #111;
-    padding: 20px;
-    border-radius: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .increment-by-input input {
+    background-color: #111111;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 5px 10px;
+    font-size: 1em;
+    border-radius: 5px 0 0 5px;
     width: 60px;
-    padding: 5px;
-    font-size: 16px;
-    border: 2px solid #44d62c;
-    background-color: #222;
-    color: #44d62c;
-    text-align: center;
-    border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .increment-by-input button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #44d62c;
-    color: #000;
+    background-color: #00ff00;
+    color: #000000;
     border: none;
-    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .increment-by-input button:hover {
-    background-color: #3da724;
+    background-color: #00cc00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}
+
+.increment-by-input button,
+.increment-by-input input {
+    font-family: 'Titillium Web', sans-serif;
 }
