@@ -1,7 +1,6 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
 import * as path from 'path';
 import * as ffi from 'ffi-napi';
-import * as fs from 'fs';
 
 let mainWindow: BrowserWindow | null;
 let nativeLib: any;

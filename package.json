@@ -5,7 +5,7 @@
   "main": "./dist/main/main.js",
   "scripts": {
     "start": "tsc && webpack --config webpack.config.js --mode=development && nodemon --watch src --exec electron ./dist/main/main.js",
-    "build": "tsc && webpack --mode=production && electron-builder build --win --publish never"
+    "build": "tsc && webpack --mode=production && electron-builder build --win portable --publish never"
   },
   "keywords": [],
   "author": "",
@@ -57,9 +57,8 @@
     ],
     "win": {
       "target": [
-        "nsis"
+        "portable"
       ]
-    },
-    "asar": false
+    }
   }
 }
